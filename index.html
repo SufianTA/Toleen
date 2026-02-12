@@ -4,55 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TOLEEN D'AMOUR | Signature Perfume</title>
-  <meta name="description" content="TOLEEN D'AMOUR is a refined luxury perfume with custom engraving and personalized details, inspired by the romance of Italy and Europe." />
+  <meta name="description" content="TOLEEN D'AMOUR is a couture perfume with European sourcing, personal engraving, and rare custom detailing." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <div class="atmosphere" aria-hidden="true"></div>
+<body class="home-page">
+  <div class="intro" aria-hidden="true">
+    <p class="intro-mark">TOLEEN D'AMOUR</p>
+  </div>
 
-  <header class="site-header reveal">
-    <p class="brand-mark">Maison de Beauté</p>
-    <h1>TOLEEN D'AMOUR</h1>
-    <p class="tagline">A signature fragrance crafted as a private love letter in scent.</p>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
+
+  <header class="hero-shell">
+    <p class="hero-kicker" data-reveal>Maison de Beaute</p>
+    <h1 data-reveal>TOLEEN D'AMOUR</h1>
+    <p class="hero-tag" data-reveal>
+      A signature perfume imagined in Italy, refined in Europe, and finished as your personal treasure.
+    </p>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="bottle-wrap reveal delay-1" aria-label="Signature perfume bottle illustration">
-        <div class="bottle-cap"></div>
-        <div class="bottle-body">
-          <p class="bottle-title">TOLEEN D'AMOUR</p>
-          <p class="bottle-subtitle">Extrait de Parfum</p>
+    <section class="hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="overline">The Signature Release</p>
+        <h2>Dreamed in moonlit Florence. Cut from glass, light, and memory.</h2>
+        <p>
+          TOLEEN D'AMOUR opens with bergamot mist, pear blossom, and silk rose. At its heart, a warm powdery iris and white amber
+          unfold slowly like a private note read at dusk. The finish is soft, lingering, and unmistakably couture.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button-primary" href="waiting-list.html">Buy One</a>
+          <span class="small-note">Limited pre-release access</span>
         </div>
       </div>
 
-      <div class="hero-copy">
-        <p class="eyebrow reveal delay-2">The Signature Release</p>
-        <h2 class="reveal delay-3">Dreamed in moonlit Florence, perfected with rare accords from Europe.</h2>
-        <p class="reveal delay-4">
-          TOLEEN D'AMOUR opens with luminous bergamot and pear blossom, then settles into soft rose velvet,
-          white amber, and a whisper of Italian iris. Each bottle is customized to its owner, designed to feel
-          personal, intimate, and impossibly elegant.
-        </p>
-        <a class="cta reveal delay-5" href="waiting-list.html">Buy One</a>
+      <div class="stage" data-reveal>
+        <div class="stage-main tilt" id="tilt-card">
+          <div class="stage-shine" aria-hidden="true"></div>
+        </div>
+        <div class="detail-tile tile-one" data-reveal></div>
+        <div class="detail-tile tile-two" data-reveal></div>
       </div>
     </section>
 
-    <section class="story reveal delay-2">
-      <h3>A Fragrance With Your Signature</h3>
+    <section class="story-strip" data-reveal>
       <p>
-        Inspired by private ateliers from Milan to Grasse, each order includes bespoke touches: a custom name engraving,
-        optional initials in fine script, and a card with your own dedication. The final finish is wrapped in silk tone
-        packaging with a hand-sealed crest, made for collectors of quiet luxury.
+        Each bottle can be personalized with custom engraving, initials in fine script, and a dedication card prepared by the atelier.
+        Your order is finished with hand-wrapped presentation details inspired by French luxury houses.
       </p>
+    </section>
+
+    <section class="details-grid">
+      <article class="detail-card" data-reveal>
+        <h3>Personal Engraving</h3>
+        <p>
+          Add your name, initials, or a date to the bottle in an elegant laser-etched signature style.
+        </p>
+      </article>
+
+      <article class="detail-card" data-reveal>
+        <h3>Private Sourcing Story</h3>
+        <p>
+          Notes inspired by Florence evenings, Grasse florals, and soft Mediterranean citrus brightness.
+        </p>
+      </article>
+
+      <article class="detail-card" data-reveal>
+        <h3>Couture Presentation</h3>
+        <p>
+          Every order arrives with satin wrap, monogram options, and a keepsake dedication insert.
+        </p>
+      </article>
     </section>
   </main>
 
-  <footer class="site-footer reveal delay-3">
-    <p>TOLEEN D'AMOUR · Paris-Inspired Luxury · Limited Waiting List</p>
+  <footer class="site-footer" data-reveal>
+    <p>TOLEEN D'AMOUR · Paris-Inspired Beauty House · Private Waiting List</p>
   </footer>
 
   <script src="script.js"></script>
