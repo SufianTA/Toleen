@@ -232,24 +232,36 @@ h3 {
   position: relative;
   width: min(500px, 92%);
   height: min(620px, 78vw);
-  border-radius: 28px;
-  border: 1px solid rgba(173, 132, 73, 0.26);
+  border-radius: 38px;
+  border: 1px solid rgba(173, 132, 73, 0.14);
   box-shadow: var(--shadow-strong);
   background:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.64), rgba(242, 225, 193, 0.24)),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.32), rgba(242, 225, 193, 0.18)),
     url("assets/perfume-main.jpg") center / cover no-repeat,
     linear-gradient(160deg, #f4e7d1, #d9bd93);
   overflow: hidden;
   transform-style: preserve-3d;
   transition: transform 250ms ease;
+  isolation: isolate;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 68%, rgba(0, 0, 0, 0.72) 82%, transparent 100%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 68%, rgba(0, 0, 0, 0.72) 82%, transparent 100%);
 }
 
 .stage-main::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.34), transparent 40%, rgba(0, 0, 0, 0.16));
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.28), transparent 40%, rgba(0, 0, 0, 0.12));
   pointer-events: none;
+}
+
+.stage-main::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle at 46% 46%, rgba(255, 255, 255, 0.44), rgba(255, 255, 255, 0.06) 58%, transparent 78%);
+  filter: blur(16px);
+  z-index: -1;
 }
 
 .stage-shine {
@@ -273,11 +285,13 @@ h3 {
   position: absolute;
   width: clamp(120px, 18vw, 170px);
   aspect-ratio: 3 / 4;
-  border-radius: 18px;
-  border: 1px solid rgba(183, 146, 88, 0.34);
+  border-radius: 26px;
+  border: 1px solid rgba(183, 146, 88, 0.18);
   box-shadow: var(--shadow-soft);
   background-size: cover;
   background-position: center;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 72%, rgba(0, 0, 0, 0.7) 84%, transparent 100%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 72%, rgba(0, 0, 0, 0.7) 84%, transparent 100%);
 }
 
 .tile-one {
