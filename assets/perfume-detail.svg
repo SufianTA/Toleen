@@ -1,33 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Perfume detail illustration">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Abstract perfume detail artwork">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f7efe1"/>
-      <stop offset="100%" stop-color="#e0c79f"/>
+      <stop offset="0%" stop-color="#f8f0e1"/>
+      <stop offset="100%" stop-color="#ddbe90"/>
     </linearGradient>
-    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#956726"/>
-      <stop offset="50%" stop-color="#e2bf7b"/>
-      <stop offset="100%" stop-color="#86581f"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f6228"/>
+      <stop offset="50%" stop-color="#e2be7a"/>
+      <stop offset="100%" stop-color="#996a2e"/>
     </linearGradient>
-    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
-      <stop offset="100%" stop-color="#d7ecff" stop-opacity="0.4"/>
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#d2e7f7" stop-opacity="0.3"/>
     </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
     <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#684621" flood-opacity="0.24"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#61401e" flood-opacity="0.23"/>
     </filter>
   </defs>
 
   <rect width="900" height="1200" fill="url(#bg)"/>
-  <circle cx="160" cy="260" r="120" fill="#9be675" fill-opacity="0.55"/>
-  <circle cx="760" cy="220" r="120" fill="#f6d26e" fill-opacity="0.5"/>
-  <circle cx="745" cy="440" r="110" fill="#65a5ff" fill-opacity="0.52"/>
+  <circle cx="180" cy="250" r="120" fill="#b7e575" fill-opacity="0.5" filter="url(#glow)"/>
+  <circle cx="730" cy="230" r="130" fill="#f4ce67" fill-opacity="0.5" filter="url(#glow)"/>
+  <circle cx="760" cy="460" r="120" fill="#66a9ff" fill-opacity="0.48" filter="url(#glow)"/>
 
   <g filter="url(#shadow)">
-    <rect x="390" y="190" width="120" height="190" rx="20" fill="url(#cap)"/>
-    <rect x="220" y="320" width="460" height="660" rx="30" fill="url(#glass)" stroke="#d1b282" stroke-opacity="0.72" stroke-width="3"/>
-    <path d="M260 430 Q460 395 640 430 L640 900 Q460 930 260 900 Z" fill="#fff" fill-opacity="0.16"/>
-    <text x="450" y="700" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="68" fill="#78645e">Toleen</text>
-    <text x="450" y="758" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="48" fill="#78645e">D'Amour</text>
+    <path d="M120 720 C250 590 380 565 500 610 C620 655 740 640 840 540" stroke="url(#gold)" stroke-width="30" stroke-linecap="round" fill="none"/>
+    <path d="M80 790 C250 680 390 675 520 730 C650 780 760 770 860 680" stroke="url(#mist)" stroke-width="20" stroke-linecap="round" fill="none"/>
+
+    <ellipse cx="470" cy="530" rx="170" ry="120" fill="#fff" fill-opacity="0.28" stroke="#d6b889" stroke-opacity="0.62" stroke-width="3"/>
+    <ellipse cx="470" cy="530" rx="100" ry="68" fill="#fff" fill-opacity="0.36"/>
+
+    <text x="450" y="980" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" letter-spacing="3" fill="#5f4a33">TOLEEN</text>
+    <text x="450" y="1040" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="56" letter-spacing="2" fill="#5f4a33">D'AMOUR</text>
   </g>
 </svg>
